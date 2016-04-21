@@ -8,7 +8,8 @@ import (
 	"net/http"
 	//	"os"
 	"time"
-	"tv/SiteParser"
+
+	"spored.tv/siteparser"
 )
 
 var (
@@ -58,21 +59,36 @@ func main() {
 			page := SiteParser.GetPage(Client, daysURL[currentDay])
 			pr.channel = string(GetStationHeader(page))
 			block := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("ScheduleItemsContainer"))
-			items := SiteParser.GetBlocks(block, []byte("class=\"ScheduleItem"), []byte("/div>"))
-			for currentItem := 0; currentItem < len(items); currentItem++ {
-				blockForDesc := SiteParser.FindTegBlockByParam(items[currentItem], []byte("class"), []byte("ProgramDescriptionLink"))
-				description := SiteParser.GetBlocks(blockForDesc, []byte(">"), []byte("<"))
+			//items := SiteParser.GetBlocks(block, []byte("class=\"ScheduleItem"), []byte("/div>"))
+			items := SiteParser.FindTegBlocksByParam(items[currentItem], []byte("class"), []byte("ScheduleItem"))
+			for currentItem := 0; currentItem < len(items[]); currentItem++ {
+				blockForTitle := SiteParser.FindTegBlockByParam(items[currentItem], []byte("class"), []byte("ProgramDescriptionLink"))
+
+				//parsing program title
+				title := SiteParser.GetBlocks(blockForTitle, []byte(">"), []byte("<"))
+				//if title don't exist
+				if len(title) > 0 {
+					pr.title = string(title[0])
+				} else {
+
+					title = SiteParser.GetBlocks(items[currentItem], []byte("/span>"), []byte("<"))
+					if len(title) > 0 {
+						pr.desc = strings.TrimSpace(string(title[0]))
+					} else {
+						fmt.Println("error parsing title:", string(blockForTitle))
+					}
+				}
+
+				//parsing program description
+				blockForDescription := SiteParser.FindTegBlockByParam(items[currentItem], []byte("id"), []byte("DivProgramDescription_"))
+				description := SiteParser.GetBlocks(blockForDescription, []byte("\""), []byte("\""))
 				if len(description) > 0 {
 					pr.desc = string(description[0])
 				} else {
-					description := SiteParser.GetBlocks(items[currentItem], []byte("/span>"), []byte("<"))
-					if len(description) > 0 {
-						pr.desc = strings.TrimSpace(string(description[0]))
-					} else {
-						fmt.Println("error parsing description:", string(blockForDesc))
-					}
+					pr.desc = ""
 				}
-				fmt.Println(pr.desc)
+
+				fmt.Println(pr.title, "\t\t\t", pr.desc)
 			}
 		}
 	}

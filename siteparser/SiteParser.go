@@ -143,32 +143,33 @@ func FindTegBlock(text []byte, classname []byte) []byte {
 
 }
 
-func FindTegBlockByParam(text []byte, param []byte, value []byte) []byte {
-	class_pos := 0
+func FindTegBlockByParam(text []byte, param []byte, value []byte, end ...*int) []byte {
+	param_pos := 0
+	*end[0] = -1
 	for {
-		//search keyword "class"
-		class_pos = Find(text[class_pos:], param, 1) + class_pos
-		if class_pos == -1 {
+		//search keyword from param
+		param_pos = Find(text[param_pos:], param, 1) + param_pos
+		if param_pos == -1 {
 			return []byte("")
 		}
-		//search the first " as start class definition
+		//search the first " as start param definition
 		//	fmt.Println(class_pos,"=", string(text[class_pos:class_pos+20]))
-		start_class_value := Find(text[class_pos:], []byte("\""), 1)
-		if start_class_value == -1 {
+		start_param_value := Find(text[param_pos:], []byte("\""), 1)
+		if start_param_value == -1 {
 			return []byte("")
 		}
-		start_class_value = start_class_value + class_pos + 1
+		start_param_value = start_param_value + param_pos + 1
 		//search next " as end class definition
-		end_class_value := Find(text[start_class_value+2:], []byte("\""), 1)
-		if end_class_value == -1 {
+		end_param_value := Find(text[start_param_value+2:], []byte("\""), 1)
+		if end_param_value == -1 {
 			return []byte("")
 		}
-		end_class_value = end_class_value + start_class_value + 2
+		end_param_value = end_param_value + start_param_value + 2
 		//		fmt.Println(start_class_value,",",end_class_value,"=",string(text[start_class_value:end_class_value]),"|",string(value))
 
 		//search value from start to end points
-		if Find(text[start_class_value:end_class_value], value, 1) != -1 {
-			for i := start_class_value; i >= 0; i-- {
+		if Find(text[start_param_value:end_param_value], value, 1) != -1 {
+			for i := start_param_value; i >= 0; i-- {
 				if (string(text[i]) == "<") && (string(text[i+1]) != "/") {
 
 					//search teg name
@@ -209,6 +210,7 @@ func FindTegBlockByParam(text []byte, param []byte, value []byte) []byte {
 						//						fmt.Println(open_teg)
 						if open_teg == 0 {
 							//fmt.Println("teg=",string(text[i:pos+len(teg)+1]))
+							*end[0] = pos + len(teg) + 1
 							return text[i : pos+len(teg)+1]
 						}
 						pos = pos + len(teg)
@@ -220,9 +222,18 @@ func FindTegBlockByParam(text []byte, param []byte, value []byte) []byte {
 				}
 			}
 		}
-		class_pos = end_class_value
+		param_pos = end_param_value
 	}
 
+}
+
+func FindTegBlocksByParam(text []byte, param []byte, value []byte) [][]byte {
+	var result [][]byte
+	var end int = 0
+	for end >= 0 {
+		result = append(result, FindTegBlockByParam(text[end:], param, value, &end))
+	}
+	return result
 }
 
 func ToDigital(text []byte) string {
