@@ -145,7 +145,16 @@ func FindTegBlock(text []byte, classname []byte) []byte {
 
 func FindTegBlockByParam(text []byte, param []byte, value []byte, end ...*int) []byte {
 	param_pos := 0
-	*end[0] = -1
+
+	if end != nil {
+		param_pos = *end[0]
+
+		if *end[0] >= len(text)-1 {
+			//		*end[0]=-1
+			return []byte("")
+		}
+	}
+	//	*end[0] = 0
 	for {
 		//search keyword from param
 		param_pos = Find(text[param_pos:], param, 1) + param_pos
@@ -210,7 +219,9 @@ func FindTegBlockByParam(text []byte, param []byte, value []byte, end ...*int) [
 						//						fmt.Println(open_teg)
 						if open_teg == 0 {
 							//fmt.Println("teg=",string(text[i:pos+len(teg)+1]))
-							*end[0] = pos + len(teg) + 1
+							if end != nil {
+								*end[0] = pos + len(teg) + 1
+							}
 							return text[i : pos+len(teg)+1]
 						}
 						pos = pos + len(teg)
@@ -230,8 +241,16 @@ func FindTegBlockByParam(text []byte, param []byte, value []byte, end ...*int) [
 func FindTegBlocksByParam(text []byte, param []byte, value []byte) [][]byte {
 	var result [][]byte
 	var end int = 0
-	for end >= 0 {
-		result = append(result, FindTegBlockByParam(text[end:], param, value, &end))
+	next := true
+	for next {
+		block := FindTegBlockByParam(text, param, value, &end)
+		if string(block) != "" {
+			result = append(result, block)
+		} else {
+			//			fmt.Println(end,"-",len(text))
+			//			fmt.Println(string(text[end:]))
+			next = false
+		}
 	}
 	return result
 }

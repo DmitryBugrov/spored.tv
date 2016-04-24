@@ -7,26 +7,47 @@ import (
 	//	"math/rand"
 	"net/http"
 	//	"os"
+	"regexp"
 	"time"
+	//	"regexp/syntax"
+	"encoding/xml"
+	"os"
 
 	"spored.tv/siteparser"
 )
 
 var (
-	Client       *http.Client
-	Domain       string
-	err          error
-	channelList  []Channel
+	Client *http.Client
+	Domain string
+	err    error
+	//	channelList  []Channel
 	programmList []Program
+	tv           TV
 
 //	blacklist []string
 )
 
-type Channel struct {
-	id          string
-	displayName string
-	url         string
+type TV struct {
+	XMLName     xml.Name  `xml:"tv"`
+	Generator   string    `xml:"generator-info-name,attr"`
+	ChannelList []Channel `xml:"channel"`
+	Created     string    `xml:"created-by"`
 }
+
+type Channel struct {
+	XMLName xml.Name `xml:"channel"`
+	Id      string   `xml:"id,attr"`
+
+	DisplayName string `xml:"display-name"`
+	Lang        string `xml:"display-name>lang,attr"`
+
+	Url string `xml:"url"`
+}
+
+//type DisplayNameStruct struct {
+//	DisplayName string `xml:"display-name"`
+//	Lang        string `xml:"lang,attr"`
+//}
 
 type Program struct {
 	channel string
@@ -47,52 +68,74 @@ func main() {
 
 	//get first page
 	page := SiteParser.GetPage(Client, firstPage)
+
 	//get list of chanel from left block of site
-	channelList := GetChannelList(page)
+	tv.ChannelList = GetChannelList(page)
+	tv.Generator = "Alternet"
+	tv.Created = firstPage
 	for currentChanell := 0; currentChanell < 1; currentChanell++ { //len(channelList); i++ {
 		//get channel page
-		page := SiteParser.GetPage(Client, channelList[currentChanell].url)
+		page := SiteParser.GetPage(Client, tv.ChannelList[currentChanell].Url)
+		channel := string(GetStationHeader(page))
 		//get urls for days
 		daysURL := GetDaysURL(page)
 		for currentDay := 0; currentDay < len(daysURL); currentDay++ {
 			var pr Program
+
 			page := SiteParser.GetPage(Client, daysURL[currentDay])
-			pr.channel = string(GetStationHeader(page))
+			day := GetDaySelected(page)
+
+			//get container with list of programs
 			block := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("ScheduleItemsContainer"))
-			//items := SiteParser.GetBlocks(block, []byte("class=\"ScheduleItem"), []byte("/div>"))
-			items := SiteParser.FindTegBlocksByParam(items[currentItem], []byte("class"), []byte("ScheduleItem"))
-			for currentItem := 0; currentItem < len(items[]); currentItem++ {
-				blockForTitle := SiteParser.FindTegBlockByParam(items[currentItem], []byte("class"), []byte("ProgramDescriptionLink"))
+
+			//get list of programs
+			items := SiteParser.FindTegBlocksByParam(block, []byte("class"), []byte("ScheduleItem"))
+			for currentItem := 0; currentItem < len(items); currentItem++ {
+				pr.desc = ""
+				pr.title = ""
+				pr.channel = channel
 
 				//parsing program title
-				title := SiteParser.GetBlocks(blockForTitle, []byte(">"), []byte("<"))
-				//if title don't exist
-				if len(title) > 0 {
-					pr.title = string(title[0])
-				} else {
+				pr.title = GetTitle(items[currentItem])
+				if pr.title == "" {
+					fmt.Println("Error parsing title:", string(items[currentItem]))
+				}
+				//parsing program description
+				pr.desc = GetDescription(items[currentItem])
+				if pr.desc == "" {
+					fmt.Println("Error parsing description:", string(items[currentItem]))
+				}
 
-					title = SiteParser.GetBlocks(items[currentItem], []byte("/span>"), []byte("<"))
-					if len(title) > 0 {
-						pr.desc = strings.TrimSpace(string(title[0]))
+				//parsing start time
+				time := GetStartTime(items[currentItem])
+				if time == "" {
+					fmt.Println("Error parsing time:", string(items[currentItem]))
+				} else {
+					pr.start = day + time + "00 +0200"
+				}
+
+				//parsing stop time
+				if currentItem < len(items)-1 {
+					time := GetStartTime(items[currentItem+1])
+					if time == "" {
+						fmt.Println("Error parsing stop time :", string(items[currentItem+1]))
 					} else {
-						fmt.Println("error parsing title:", string(blockForTitle))
+						pr.stop = day + time + "00 +0200"
 					}
 				}
-
-				//parsing program description
-				blockForDescription := SiteParser.FindTegBlockByParam(items[currentItem], []byte("id"), []byte("DivProgramDescription_"))
-				description := SiteParser.GetBlocks(blockForDescription, []byte("\""), []byte("\""))
-				if len(description) > 0 {
-					pr.desc = string(description[0])
-				} else {
-					pr.desc = ""
-				}
-
-				fmt.Println(pr.title, "\t\t\t", pr.desc)
+				programmList = append(programmList, pr)
+				//	fmt.Println(pr.title, "\t\t", pr.start, "\t", pr.stop, "\t\t", pr.desc)
 			}
 		}
 	}
-	//	fmt.Println(string(GetStationHeader(page)))
+	fmt.Println(tv)
+	output, err := xml.MarshalIndent(tv, "  ", "    ")
+	if err != nil {
+		fmt.Printf("error: %v\n", err)
+	}
+
+	os.Stdout.Write(output)
+
 }
 
 func GetStationHeader(page []byte) []byte {
@@ -107,9 +150,10 @@ func GetChannelList(page []byte) []Channel {
 	var channelList []Channel
 	for i := 0; i < len(items); i++ {
 		var new_channel Channel
-		new_channel.displayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
-		new_channel.id = new_channel.displayName
-		new_channel.url = SiteParser.GetURL(items[i], Domain)
+		new_channel.DisplayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
+		new_channel.Id = new_channel.DisplayName
+		new_channel.Url = SiteParser.GetURL(items[i], Domain)
+		new_channel.Lang = "sr"
 		channelList = append(channelList, new_channel)
 		//		fmt.Println(string(cl[i].url))
 	}
@@ -124,4 +168,62 @@ func GetDaysURL(page []byte) []string {
 		urls = append(urls, SiteParser.GetURL(items[i], Domain))
 	}
 	return urls
+}
+
+func GetDaySelected(page []byte) string {
+	block := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("DaySelected"))
+	urlWithDate := SiteParser.GetURL(block, Domain)
+	//	fmt.Println(urlWithDate)
+	re := regexp.MustCompile(".*([0-9][0-9])-([0-9][0-9])-([0-9][0-9][0-9][0-9])")
+	dateArray := re.FindStringSubmatch(urlWithDate)
+	//	fmt.Println(dateArray)
+	date := ""
+	if len(dateArray) == 4 {
+		date = dateArray[3] + dateArray[2] + dateArray[1]
+	}
+	return date
+
+}
+
+func GetTitle(page []byte) string {
+	var result = ""
+	blockForTitle := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("ProgramDescriptionLink"))
+	title := SiteParser.GetBlocks(blockForTitle, []byte(">"), []byte("<"))
+	//if title don't exist
+	if len(title) > 0 {
+		result = string(title[0])
+	} else {
+
+		title = SiteParser.GetBlocks(page, []byte("/span>"), []byte("<"))
+		if len(title) > 0 {
+			result = strings.TrimSpace(string(title[0]))
+		} else {
+			fmt.Println("error parsing title:", string(page), "=")
+		}
+	}
+	return result
+
+}
+
+func GetDescription(page []byte) string {
+	var result = ""
+	blockForDescription := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("DivProgramDescription_"))
+	description := SiteParser.GetBlocks(blockForDescription, []byte(">"), []byte("</div>"))
+	if len(description) > 0 {
+		result = string(description[0])
+	}
+	return result
+}
+
+func GetStartTime(page []byte) string {
+	var result = ""
+	block := SiteParser.GetBlocks(page, []byte("<span"), []byte("</span>"))
+	if len(block) == 1 {
+		re := regexp.MustCompile(".*([0-9][0-9]):([0-9][0-9])")
+		timeArray := re.FindStringSubmatch(string(block[0]))
+		if len(timeArray) == 3 {
+			result = timeArray[1] + timeArray[2]
+		}
+	}
+	return result
 }
