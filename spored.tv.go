@@ -1,17 +1,15 @@
 package main
 
 import (
-	//	"bufio"
+	"encoding/xml"
+	"flag"
 	"fmt"
-	"strings"
-	//	"math/rand"
+	"io/ioutil"
 	"net/http"
 	//	"os"
 	"regexp"
+	"strings"
 	"time"
-	//	"regexp/syntax"
-	"encoding/xml"
-	"os"
 
 	"spored.tv/siteparser"
 )
@@ -21,45 +19,56 @@ var (
 	Domain string
 	err    error
 	//	channelList  []Channel
-	programmList []Program
-	tv           TV
-
-//	blacklist []string
+	//	programmList []Program
+	tv TV
 )
 
 type TV struct {
-	XMLName     xml.Name  `xml:"tv"`
-	Generator   string    `xml:"generator-info-name,attr"`
-	ChannelList []Channel `xml:"channel"`
-	Created     string    `xml:"created-by"`
+	XMLName      xml.Name  `xml:"tv"`
+	Generator    string    `xml:"generator-info-name,attr"`
+	Created      string    `xml:"created-by,attr"`
+	ChannelList  []Channel `xml:"channel"`
+	ProgrammList []Program `xml:"programme"`
 }
 
 type Channel struct {
-	XMLName xml.Name `xml:"channel"`
-	Id      string   `xml:"id,attr"`
-
-	DisplayName string `xml:"display-name"`
-	Lang        string `xml:"display-name>lang,attr"`
-
-	Url string `xml:"url"`
+	XMLName xml.Name          `xml:"channel"`
+	Id      string            `xml:"id,attr"`
+	DN      DisplayNameStruct `xml:"display-name"`
+	Url     string            `xml:"url"`
 }
 
-//type DisplayNameStruct struct {
-//	DisplayName string `xml:"display-name"`
-//	Lang        string `xml:"lang,attr"`
-//}
+type DisplayNameStruct struct {
+	XMLName     xml.Name `xml:"display-name"`
+	DisplayName string   `xml:",chardata"`
+	Lang        string   `xml:"lang,attr"`
+}
 
 type Program struct {
-	channel string
-	start   string
-	stop    string
-	title   string
-	desc    string
+	XMLName xml.Name    `xml:"programme"`
+	Channel string      `xml:"channel,attr"`
+	Start   string      `xml:"start,attr"`
+	Stop    string      `xml:"stop,attr"`
+	TS      TitleStruct `xml:"title"`
+	DS      DescStruct  `xml:"desc"`
+}
+
+type TitleStruct struct {
+	XMLName xml.Name `xml:"title"`
+	Title   string   `xml:",chardata"`
+	Lang    string   `xml:"lang,attr"`
+}
+
+type DescStruct struct {
+	XMLName xml.Name `xml:"desc"`
+	Desc    string   `xml:",chardata"`
+	Lang    string   `xml:"lang,attr"`
 }
 
 func main() {
 	fmt.Println(time.Now(), "Starting...")
-
+	XmlFilePtr := flag.String("xml-file", "./spored_tv.xml", "output file")
+	flag.Parse()
 	firstPage := "http://www.spored.tv/"
 	Domain = "http://www.spored.tv"
 	//create http client with cooks
@@ -91,18 +100,20 @@ func main() {
 			//get list of programs
 			items := SiteParser.FindTegBlocksByParam(block, []byte("class"), []byte("ScheduleItem"))
 			for currentItem := 0; currentItem < len(items); currentItem++ {
-				pr.desc = ""
-				pr.title = ""
-				pr.channel = channel
+				pr.DS.Desc = ""
+				pr.TS.Title = ""
+				pr.TS.Lang = "sr"
+				pr.DS.Lang = "sr"
+				pr.Channel = channel
 
 				//parsing program title
-				pr.title = GetTitle(items[currentItem])
-				if pr.title == "" {
+				pr.TS.Title = GetTitle(items[currentItem])
+				if pr.TS.Title == "" {
 					fmt.Println("Error parsing title:", string(items[currentItem]))
 				}
 				//parsing program description
-				pr.desc = GetDescription(items[currentItem])
-				if pr.desc == "" {
+				pr.DS.Desc = GetDescription(items[currentItem])
+				if pr.DS.Desc == "" {
 					fmt.Println("Error parsing description:", string(items[currentItem]))
 				}
 
@@ -111,7 +122,7 @@ func main() {
 				if time == "" {
 					fmt.Println("Error parsing time:", string(items[currentItem]))
 				} else {
-					pr.start = day + time + "00 +0200"
+					pr.Start = day + time + "00 +0200"
 				}
 
 				//parsing stop time
@@ -120,21 +131,27 @@ func main() {
 					if time == "" {
 						fmt.Println("Error parsing stop time :", string(items[currentItem+1]))
 					} else {
-						pr.stop = day + time + "00 +0200"
+						pr.Stop = day + time + "00 +0200"
 					}
 				}
-				programmList = append(programmList, pr)
-				//	fmt.Println(pr.title, "\t\t", pr.start, "\t", pr.stop, "\t\t", pr.desc)
+				tv.ProgrammList = append(tv.ProgrammList, pr)
+				//	fmt.Println(pr.TS.Title, "\t\t", pr.Start, "\t", pr.Stop, "\t\t", pr.DS.Desc)
 			}
 		}
 	}
-	fmt.Println(tv)
-	output, err := xml.MarshalIndent(tv, "  ", "    ")
+
+	//	generate XML file
+	output, err := xml.MarshalIndent(tv, " ", "    ")
 	if err != nil {
 		fmt.Printf("error: %v\n", err)
 	}
 
-	os.Stdout.Write(output)
+	//	write XML to file
+	err = ioutil.WriteFile(*XmlFilePtr, output, 0644)
+	if err != nil {
+		fmt.Printf("error: %v\n", err)
+	}
+	//	os.Stdout.Write(output)
 
 }
 
@@ -150,10 +167,10 @@ func GetChannelList(page []byte) []Channel {
 	var channelList []Channel
 	for i := 0; i < len(items); i++ {
 		var new_channel Channel
-		new_channel.DisplayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
-		new_channel.Id = new_channel.DisplayName
+		new_channel.DN.DisplayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
+		new_channel.Id = new_channel.DN.DisplayName
 		new_channel.Url = SiteParser.GetURL(items[i], Domain)
-		new_channel.Lang = "sr"
+		new_channel.DN.Lang = "sr"
 		channelList = append(channelList, new_channel)
 		//		fmt.Println(string(cl[i].url))
 	}
@@ -210,9 +227,10 @@ func GetDescription(page []byte) string {
 	blockForDescription := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("DivProgramDescription_"))
 	description := SiteParser.GetBlocks(blockForDescription, []byte(">"), []byte("</div>"))
 	if len(description) > 0 {
-		result = string(description[0])
+		result = string(ClearHTMLTag(description[0]))
+		//result = string(description[0])
 	}
-	return result
+	return strings.TrimSpace(result)
 }
 
 func GetStartTime(page []byte) string {
@@ -226,4 +244,21 @@ func GetStartTime(page []byte) string {
 		}
 	}
 	return result
+}
+
+func ClearHTMLTag(text []byte) []byte {
+	tagList := []string{"<i>", "</i>", "br />", "<br>"}
+	for i := 0; i < len(tagList); i++ {
+		next := true
+		for next {
+			n := SiteParser.Find(text, []byte(tagList[i]), 1)
+			if n != -1 {
+				copy(text[n:], text[n+len(tagList[i]):])
+				text = text[:len(text)-len(tagList[i])-1]
+			} else {
+				next = false
+			}
+		}
+	}
+	return text
 }
