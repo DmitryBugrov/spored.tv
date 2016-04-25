@@ -99,8 +99,8 @@ func main() {
 			for currentItem := 0; currentItem < len(items); currentItem++ {
 				pr.DS.Desc = ""
 				pr.TS.Title = ""
-				pr.TS.Lang = "sr"
-				pr.DS.Lang = "sr"
+				pr.TS.Lang = "sl"
+				pr.DS.Lang = "sl"
 				pr.Channel = channel
 
 				//parsing program title
@@ -167,7 +167,7 @@ func GetChannelList(page []byte) []Channel {
 		new_channel.DN.DisplayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
 		new_channel.Id = new_channel.DN.DisplayName
 		new_channel.Url = SiteParser.GetURL(items[i], Domain)
-		new_channel.DN.Lang = "sr"
+		new_channel.DN.Lang = "sl"
 		channelList = append(channelList, new_channel)
 		//		fmt.Println(string(cl[i].url))
 	}
