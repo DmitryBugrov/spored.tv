@@ -1,0 +1,514 @@
+ <tv generator-info-name="Alternet" created-by="http://www.spored.tv/">
+     <channel id="POP TV">
+         <display-name lang="sr">POP TV</display-name>
+         <url>http://www.spored.tv/pop-tv/</url>
+     </channel>
+     <channel id="Kanal A">
+         <display-name lang="sr">Kanal A</display-name>
+         <url>http://www.spored.tv/kanal-a/</url>
+     </channel>
+     <channel id="TV Slo 1">
+         <display-name lang="sr">TV Slo 1</display-name>
+         <url>http://www.spored.tv/tv-slo-1/</url>
+     </channel>
+     <channel id="TV Slo 2">
+         <display-name lang="sr">TV Slo 2</display-name>
+         <url>http://www.spored.tv/tv-slo-2/</url>
+     </channel>
+     <channel id="TV Slo 3">
+         <display-name lang="sr">TV Slo 3</display-name>
+         <url>http://www.spored.tv/tv-slo-3/</url>
+     </channel>
+     <channel id="Planet TV">
+         <display-name lang="sr">Planet TV</display-name>
+         <url>http://www.spored.tv/planet-tv/</url>
+     </channel>
+     <channel id="TV3 medias">
+         <display-name lang="sr">TV3 medias</display-name>
+         <url>http://www.spored.tv/tv3-medias/</url>
+     </channel>
+     <channel id="Brio">
+         <display-name lang="sr">Brio</display-name>
+         <url>http://www.spored.tv/brio/</url>
+     </channel>
+     <channel id="Discovery Channel">
+         <display-name lang="sr">Discovery Channel</display-name>
+         <url>http://www.spored.tv/discovery-channel/</url>
+     </channel>
+     <channel id="National Geographic">
+         <display-name lang="sr">National Geographic</display-name>
+         <url>http://www.spored.tv/national-geographic/</url>
+     </channel>
+     <channel id="Travel Channel">
+         <display-name lang="sr">Travel Channel</display-name>
+         <url>http://www.spored.tv/travel-channel/</url>
+     </channel>
+     <channel id="Animal Planet">
+         <display-name lang="sr">Animal Planet</display-name>
+         <url>http://www.spored.tv/animal-planet/</url>
+     </channel>
+     <channel id="FOX">
+         <display-name lang="sr">FOX</display-name>
+         <url>http://www.spored.tv/fox/</url>
+     </channel>
+     <channel id="FOX Life">
+         <display-name lang="sr">FOX Life</display-name>
+         <url>http://www.spored.tv/fox-life/</url>
+     </channel>
+     <channel id="FOX Crime">
+         <display-name lang="sr">FOX Crime</display-name>
+         <url>http://www.spored.tv/fox-crime/</url>
+     </channel>
+     <channel id="TLC">
+         <display-name lang="sr">TLC</display-name>
+         <url>http://www.spored.tv/tlc/</url>
+     </channel>
+     <channel id="TV1000">
+         <display-name lang="sr">TV1000</display-name>
+         <url>http://www.spored.tv/tv1000/</url>
+     </channel>
+     <channel id="Universal Channel">
+         <display-name lang="sr">Universal Channel</display-name>
+         <url>http://www.spored.tv/universal-channel/</url>
+     </channel>
+     <channel id="HBO">
+         <display-name lang="sr">HBO</display-name>
+         <url>http://www.spored.tv/hbo/</url>
+     </channel>
+     <channel id="Cartoon Network">
+         <display-name lang="sr">Cartoon Network</display-name>
+         <url>http://www.spored.tv/cartoon-network/</url>
+     </channel>
+     <channel id="Sportklub">
+         <display-name lang="sr">Sportklub</display-name>
+         <url>http://www.spored.tv/sportklub/</url>
+     </channel>
+     <channel id="Šport TV 1">
+         <display-name lang="sr">Šport TV 1</display-name>
+         <url>http://www.spored.tv/sport-tv-1/</url>
+     </channel>
+     <channel id="Šport TV 2">
+         <display-name lang="sr">Šport TV 2</display-name>
+         <url>http://www.spored.tv/sport-tv-2/</url>
+     </channel>
+     <channel id="Eurosport">
+         <display-name lang="sr">Eurosport</display-name>
+         <url>http://www.spored.tv/eurosport/</url>
+     </channel>
+     <channel id="HTV 1">
+         <display-name lang="sr">HTV 1</display-name>
+         <url>http://www.spored.tv/htv-1/</url>
+     </channel>
+     <channel id="HTV 2">
+         <display-name lang="sr">HTV 2</display-name>
+         <url>http://www.spored.tv/htv-2/</url>
+     </channel>
+     <channel id="Nova TV">
+         <display-name lang="sr">Nova TV</display-name>
+         <url>http://www.spored.tv/nova-tv/</url>
+     </channel>
+     <channel id="TV Koper">
+         <display-name lang="sr">TV Koper</display-name>
+         <url>http://www.spored.tv/tv-koper/</url>
+     </channel>
+     <channel id="TV Maribor">
+         <display-name lang="sr">TV Maribor</display-name>
+         <url>http://www.spored.tv/tv-maribor/</url>
+     </channel>
+     <programme channel="TV spored POP TV" start="20160424064500 +0200" stop="20160424065000 +0200">
+         <title lang="sr">OTO čira čara, 2013</title>
+         <desc lang="sr">OTO čira čara -  sezona 0 -  epizoda 1 -  SloVENIA.&lt;</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424065000 +0200" stop="20160424071500 +0200">
+         <title lang="sr">Chuck in prijatelji, 2010</title>
+         <desc lang="sr">Adventures of Chuck and Friends I. -  prva sezona /  epizoda 15 -  USA.&lt; Chuck je prikupen tovornjaček, ki se predvsem rad zabava, raziskuje in druži s svojimi prijatelji. Njegova domišljija ne pozna nobenih meja, svoje sanje pa vedno skuša tudi uresničiti. Med drugim si nadvse želi postati dirkalnik, zato s prijatelji zelo rad tekmuje. Dogodivščin mu tako nikoli ne zmanjka, pa čeprav se te včasih rade končajo zelo blatno.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424071500 +0200" stop="20160424072500 +0200">
+         <title lang="sr">Zebra Zigbi, 2009</title>
+         <desc lang="sr">Zigby I. -  prva sezona /  epizoda 15 -  AUSTRALIA,CANADA.&lt; Zigbi je zebra z bujno domišljijo, ki s svojo radovedno navihanostjo vedno pristane v težavah. Pri odštekanih dogodivščinah se Zigbiju največkrat pridružita še prijatelja, saj surikat Mrjavko in pegatka Berti zmeraj pristaneta v godlji skupaj z njim. Na srečo Zigbiju vedno uspe najti prebrisan in zanimiv način, da jih iz težav spet spravi na zeleno vejo.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424072500 +0200" stop="20160424075000 +0200">
+         <title lang="sr">Tačke na patrulji, 2013</title>
+         <desc lang="sr">Paw Patrol I. -  prva sezona /  epizoda 14 -  USA.&lt; 10-letni deček Riki vodi skupino šestih junaških kužkov, ki vedno prvi priskočijo na pomoč v primeru nesreče. Bron, Marshall, Rocky, Robi, Zuma in Sky se trudijo po najboljših močeh, da zaščitijo prebivalce svojega mesta. Vsak izmed njih je opremljen s posebno opremo in s skupnimi močmi pomagajo vsem, ki se znajdejo v zagati. Nobena naloga za njih ni prevelika in noben kužek ni za to premajhen!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424075000 +0200" stop="20160424081500 +0200">
+         <title lang="sr">Trgovinica za živali, 2012</title>
+         <desc lang="sr">Littlest Pet Shop I. -  prva sezona /  epizoda 23 -  USA,CANADA.&lt; Vili in Samo se prepričata, da so v trgovinici za živali volkodlaki in poskušata ugotoviti, kdo od njunih prijateljev se bo ponoči spremenil v zver. Medtem Betka ostane zaklenjena v kopalnici skupaj z eno od dvojčic Benko, ki seveda ni navdušena nad nastalo situacijo.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424081500 +0200" stop="20160424082000 +0200">
+         <title lang="sr">Gospodična Žuža, 2012</title>
+         <desc lang="sr">Mademoiselle Zazie I. -  prva sezona /  epizoda 10 -  FRANCE.&lt; Gospodična Žuža nas bo skupaj s svojimi navihanimi in radovednimi prijatelji popeljala na zabavne dogodivščine. Odkrivali bomo svet odraslih, raziskovali nenavadne pojave in skupaj reševali probleme na načine, ki se jih odrasli ne bi nikoli domislili. Druščina hudomušnih animiranih junakov nas bo vsakič znova spravila v dobro voljo in nasmejala do solz!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424082000 +0200" stop="20160424085000 +0200">
+         <title lang="sr">Wendy, 2013</title>
+         <desc lang="sr">Wendy I. -  prva sezona /  epizoda 13 -  SCOTLAND.&lt; Vanessa in Wendy sta si prisiljeni deliti Wendyjino sobo, saj se Vanessa za nekaj dni preseli k Thorburnovim. Vanessa gre Wendy zelo na živce, dokler Tarik po Wendyjini zaslugi ne zboli. Dekleti morata zato združiti moči in bedeti ob njem vso noč, toda ali bo Wendy priznala svojo napako?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424085000 +0200" stop="20160424091500 +0200">
+         <title lang="sr">Lego Star Wars - Zgodbe droidov, 2015</title>
+         <desc lang="sr">Lego Star Wars: Droid Tales -  sezona 0 -  epizoda 5 -  USA.&lt; Potem ko je C-3PO rešil R2-D2, general Veers sedaj ugrabi še njega, saj hoče s svojimi pripadniki obnoviti Imperij. Zaradi tega se uporniki znajdejo v veliki nevarnosti. Medtem ko je C-3PO v ujetništvu, se zabava s spomini na zgodbe iz zadnje epizode Vojne zvezd, Jedijeva vrnitev.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424091500 +0200" stop="20160424093500 +0200">
+         <title lang="sr">Transformerji - Roboti pod krinko, 2012</title>
+         <desc lang="sr">Transformers: Robots in Disguise I. -  druga sezona /  epizoda 21 -  USA.&lt; Zaporniška ladja avtobotov, ki tovori stotine najbolj iskanih deseptikonov, se zruši na Zemljo. Tako se nevarni deseptikoni razbežijo po Zemlji. Avtoboti takoj pošljejo signal za pomoč, zato Optimus zadolži Bumlebeeja za reševanje Zemlje in njenih avtohtonih prebivalcev. Tako se Bumblebee z ekipo, ki vključuje tudi nekdanjega zapornika deceptikonov in dva človeka, poda na zahtevno misijo. Največjo grožnjo jim predstavlja karizmatični deceptikon, ki hoče s pobeglimi zaporniki sestaviti veliko vojsko, s katero bo zavladal planetu.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424093500 +0200" stop="20160424102000 +0200">
+         <title lang="sr">Ninja želve, 2013</title>
+         <desc lang="sr">Teenage Mutant Ninja Turtles II. (2013) -  sezona 0 -  epizoda 6 -  USA.&lt; Junaške ninja želve so mutirane želve, ki živijo v kanalizaciji New Yorka, kjer jih je našel njihov učitelj in mojster Splinter in izuril v močne in neustrašne bojevnike. Leonardo, Raphael, Donatello in Michelangelo, ki so svoja imena dobili po slavnih renesančnih umetnikih, se tako s Splinterjevo pomočjo borijo proti zlu, ki v New Yorku nikoli ne miruje.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424102000 +0200" stop="20160424115000 +0200">
+         <title lang="sr">Lassie - Handfordova točka, 1967</title>
+         <desc lang="sr">Lassie: Handford&#39;s Point -  USA -  Režija: Jack B. Hively -  Igrajo: Robert Bray, Bonita Granville, Karl Swenson, Barbara Graham.&lt; Mladeniča Chris in Drew Handford sta siroti, ki živita v čudoviti gorati pokrajini blizu jezera. Njuno idilo zmoti podjetnik Corey Stuart, ki bi rad njuno zemljo odkupil in na njej zgradil mali turistični raj. Chris in Drew temu nasprotujeta, saj se zavedata, da lahko Stuartovi načrti uničijo njuno prizadevanje za ohranitev čistega okolja. Brata imata tudi slabe sosedske odnose s sumničavim Tomom Wadom, ko pa se njegova hčerka Luci znajde v nevarnosti, ji prav onadva priskočita na pomoč. In seveda Lassie.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424115000 +0200" stop="20160424123500 +0200">
+         <title lang="sr">Vrhunske usluge na Beverly Hillsu, 2007</title>
+         <desc lang="sr">High Maintenance 90210 I. -  prva sezona /  epizoda 6 -  USA.&lt; Beverly Hills je znan po svojih premožnih prebivalcih, veliko manj pa po ljudeh, ki za te bogataše opravljajo različne storitve. Nova resničnostna serija se osredotoča na služabnike, varuške in kuharje, ki si želijo najti delo pri kateri izmed bogatih družin ter si z opravljanjem napornih dolžnosti zagotoviti stalno mesto v njihovem gospodinjstvu.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424123500 +0200" stop="20160424141500 +0200">
+         <title lang="sr">Tatica umetnin, 2007</title>
+         <desc lang="sr">Jane Doe 9: Eye Of The Beholder -  USA -  Režija: Lea Thompson -  Igrajo: Lea Thompson, Joe Penny, William R. Moses, Jessy Schram.&lt; Neznanci ukradejo 150 milijonov dolarjev vredno sliko nizozemskega mojstra Vermeerja, ki je vse do zdaj veljala za pogrešano. Sliko so v času druge svetovne vojne ukradli nacisti, zdaj pa jo je njena lastnica Hildy Bloome nameravala podariti muzeju. Toda še preden jo postavijo na ogled, slika izgine, storilci pa za seboj pustijo le prazen okvir in skrivnostne številke 15-21-1890. Tajna agentka Cathy Davis kmalu ugotovi, da številke predstavljajo Hitlerjev rojstni datum, poleg tega pa izve, da je varnostnik v muzeju rasist.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424141500 +0200" stop="20160424161000 +0200">
+         <title lang="sr">Srčna agentka, 1997</title>
+         <desc lang="sr">Matchmaker -  USA,ENGLAND,IRELAND -  Režija: Mark Joffe -  Igrajo: Janeane Garofalo, David O&#39;Hara, Milo O&#39;Shea, Denis Leary.&lt; Marcy Tizard je članica ekipe, ki dela za senatorja zvezne države Massachusetts. Ta se v Bostonu pripravlja na ponovne volitve in upa, da bo tudi v drugo zmagal. Senatorjev svetovalec Nick načrtuje, da bo s svojo novo genialno zamislijo poskrbel za dodatne glasove irskih priseljencev, če bo našel senatorjeve irske prednike. Tako se Marcy odpravi v irsko mestece Ballinagra, vendar ne ve, da tam pravkar poteka tradicionalni festival v parčkanju. Punca se kmalu povsem nepričakovano znajde v primežu ljubezni. Popolnoma jo očara nezaposleni novinar Sean, ki se je pravkar ločil od svoje žene.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424161000 +0200" stop="20160424174000 +0200">
+         <title lang="sr">Bitka parov, 2016</title>
+         <desc lang="sr">Bitka parov I. -  prva sezona /  epizoda 7 -  SloVENIA.&lt; Tudi tokrat je pred nami vrsta razburljivih izzivov! Najprej moške čaka neprijetno presenečenje. Borili se bodo za vdih, zato gravitacija in voda postaneta njihova največja sovražnika. Na drugi strani bodo imele ženske nekoliko lažjo nalogo, ki pa zato ne bo nič manj pomembna. Punce bodo pokazale, kako se v moškem svetu znajdejo z moškimi opravili. Kdo bo prvi nominirani par, boste izvedeli po dveh najrazburljivejših izzivih do tega trenutka!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424174000 +0200" stop="20160424181500 +0200">
+         <title lang="sr">Vrtičkanje, 2015</title>
+         <desc lang="sr">Vrtičkanje III. -  tretja sezona /  epizoda 9 -  SloVENIA.&lt; V tokratni oddaji naši vrtičkarici občudujeta princeso med grmovnicami – čudovito hortenzijo. Tina pa obožuje še zelenjadnico, ki v vročih poletnih dneh na naše krožnike prinese pravo osvežitev. Brez kumar na vrtu pač ne gre, pa če se odločite za klasične ali kakšne bolj posebne sorte. In če kumar zraste preveč, brez skrbi, Metka in Tina bosta izdali tudi poseben recept za vlaganje.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424181500 +0200" stop="20160424185500 +0200">
+         <title lang="sr">Polona ga žge, 2016</title>
+         <desc lang="sr">Polona ga žge II. -  druga sezona /  epizoda 9 -  SloVENIA.&lt; V kuhinjo so povabili enega najbolj zabavnih novinarjev v Sloveniji, zato postane kuhanje ne le kreativno, pač pa tudi sila smešno in sproščujoče doživetje. Tokrat bo Polona kuhala z novinarjem Denisom Živčecem, ki bo prvič v življenju v rokah držal surovo ribo, le-ta pa bo nato romala v okusno rižoto. Sladkosnedeža si bosta pripravila še sladko in slastno limonino pito z jagodami in ob tem s smehom nalezla tudi gledalce.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424185500 +0200" stop="20160424185800 +0200">
+         <title lang="sr">24UR vreme, 2016</title>
+         <desc lang="sr">24UR vreme -  24UR VREME je z vami vsak dan pred osrednjo dnevnoinformativno oddajo. Napoved je atraktivno podkrepljena z grafiko, ki ponuja nazoren pregled vremena po državi in z zanimivimi dogodki, povezanimi z vremenom. Prisluhnete lahko tudi nasvetom in vremenskim opozorilom, ki so postali stalnica pri očitnih klimatskih spremembah.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424185800 +0200" stop="20160424200000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424200000 +0200" stop="20160424230000 +0200">
+         <title lang="sr">Znan obraz ima svoj glas, 2016</title>
+         <desc lang="sr">Znan obraz ima svoj glas III. -  tretja sezona /  epizoda 8 -  SloVENIA.&lt; Nedelja bo ponovno presenetila s pestrimi preobrazbami. Ines bo stopila v kožo pevke Gossip, Jana v srbsko superzvezdo Jeleno Karleuša, Ani pa v kraljico soula in jazza Sade. Renata bo spet moški, tokrat pevec s prepoznavnim stilom, Axl Rose. Tilen bo postal priljubljen pevec skupine Čuki - Jože Potrebuješ, Mišo pa operni pevec Placido Domingo. Samuel se je pri imitaciji Franka Sinatre odločil za jokerja, vendar bo njegov počitek gotovo prekinjen z nasveti Nejcu, ki se bo preobrazil v nikogar drugega kot – Samuela Lucasa!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424230000 +0200" stop="20160424010500 +0200">
+         <title lang="sr">Naključni milijonar, 2002</title>
+         <desc lang="sr">Mr. Deeds -  USA -  Režija: Steven Brill -  Igrajo: Adam Sandler, Winona Ryder, John Turturro, Steve Buscemi.&lt; Longfellow Deeds je prijeten mladenič, ki živi preprosto, a srečno življenje v majhnem mestecu, kjer ima svojo picerijo. Vse se spremeni, ko mu podjetniški mogotec Chuck Cedar pove, da mu je dolgo izgubljeni sorodnik zapustil ogromno bogastvo. Skupaj z denarjem je Deeds podedoval tudi mrežo medijskih postaj, nogometno in košarkarsko moštvo ter zasebni helikopter. Mediji seveda takoj pograbijo vročo zgodbo o revežu, ki je postal bogataš. Prikupna novinarka Babe Bennett mora po ukazu šefa o Deedsu izbrskati kakšno umazano podrobnost. Sprva svojo nalogo vzame zelo resno, sčasoma pa se v Deedsa noro zaljubi.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424010500 +0200" stop="20160424024500 +0200">
+         <title lang="sr">Muha, 1986</title>
+         <desc lang="sr">Fly -  USA -  Režija: David Cronenberg -  Igrajo: Jeff Goldblum, Geena Davis, Leslie Carlson, John Getz.&lt; Znanstvenik Seth Brundle izumi genetski transporter in na demonstracijo povabi novinarko Veronico Quaife, da bi dokumentirala njegovo revolucionarno delo. Pri delu se zbližata in postaneta par. Seth sprva z izumom prenaša samo stvari, končno pa je pripravljen na prenos samega sebe. Toda ko se zapre v napravo, ne opazi, da je vanjo priletela muha. Po navidez uspešnem poskusu dobi Seth nadčloveško moč, po telesu pa mu začnejo rasti čudni izrastki, dokler ne začne opazno spreminjati svoje podobe. Seth se začne spreminjati v nekaj, kar je filmu prislužilo oskarja za masko.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424024500 +0200" stop="20160424055000 +0200">
+         <title lang="sr">Zvoki noči</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160424055000 +0200" stop="20160424055000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425083000 +0200" stop="20160425100500 +0200">
+         <title lang="sr">Italijanska nevesta, 2014</title>
+         <desc lang="sr">Muchacha Italiana viene a casarse I. -  prva sezona /  epizoda 69 -  MEXICO -  Igrajo: Livia Brito, Jose Ron, Isela Vega, Enrique Rocha, Nailea Norvind, Fernando Allende, Mike Biagio, Eleazar Gomez.&lt; Potem ko jo je odpustila, Fiorella prosi Eloiso, naj dovoli Gianni ostati na ranču. Vittorio od Diane zahteva, da mu pokaže sliko njene dvojčice. Eloisa Fiorelli zaupa, da jo Pedro zagotovo ljubi, vendar se mora poročiti z Aitano za dobrobit svoje družine. Osvaldo želi z Alino proslaviti, da bo postal oče, medtem ko ga ona namerava zapustiti. Pedro se sooči s svojo babico in želi, da ponovno zaposli Fiorello, vendar ona v zameno zahteva, da se poroči z Aitano.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425100500 +0200" stop="20160425112000 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 10 -  AUSTRIA,GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; Lepa študentka Marion si služi denar kot prostitutka v luksuznem bordelu. Od ene izmed svojih zvestih strank, ki je investicijski strokovnjak, dobiva nasvete o vlaganju v delnice. Ker Marion želi zaslužiti nekaj denarja, se kmalu zaplete v mrežo zločina. Ko odkrijejo njeno truplo, morajo Brandtner in njegova ekipa odkriti, kdo stoji za krutim umorom.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425112000 +0200" stop="20160425123000 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 24 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Natalia se sooči s Florencio in ji pove, da želi prekiniti njuno zvezo, saj je ne ljubi več. Iz zasede ju opazuje Veronica, ki namerava svoji zaveznici priznati, da je Natalia njena sestra dvojčica. Felipe je presrečen, ker bo postal oče in veselo novico zaupa Antoniu in Lorenzu. Kmalu od Lorenza za Nataliino nosečnost izve tudi Veronica. Benitez je besen, saj mu ne uspe izslediti Natalie.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425123000 +0200" stop="20160425134000 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 51 -  SloVENIA.&lt; Tokrat obe mami v kuhinjo prineseta nekaj tradicije in starih receptov. Par iz prejšnje oddaje pripravi bučno juho in solnograške žličnike, Prekmurki Katarina in Danica pa segedin, ki ga pospremita s popečenimi rženimi kruhki, natrtimi s česnom po babičinem receptu. Jan pa se je ukvarjal s simultanim prevajanjem prekmurščine.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425134000 +0200" stop="20160425143000 +0200">
+         <title lang="sr">Trdoglavci, 2011</title>
+         <desc lang="sr">Trdoglavci I. -  prva sezona /  epizoda 9 -  SloVENIA -  Igrajo: Jernej Šugman, Ivanka Mežan, Bojan Emeršič, Nataša Tič Ralijan.&lt; V Trdoglavu se je zgodil škandal, kot ga ne pomnijo. Katka je srečno zaljubljena v fanta iz sosednje vasi Žmurek, kar gre Trdoglavčanom najbolj v nos. Vsi se takoj potrudijo, da Katki zagrenijo življenje. Med tem pa Jurček in Miki raziskujeta skrivnostni primer kradljive srne. Ko srna naleti na Katkinega novega fanta, ki je tudi lovec, Katka hitro spet ostane sama.&lt;</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425143000 +0200" stop="20160425153000 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 25 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Felipe opazi, da se Gabriela nenavadno obnaša in sumi, da mu nekaj prikriva. Ivan povabi Frankie na zmenek, ki ga bosta preživela v družbi Felipeja in Natalie. Odpravijo se na večerjo v hotel, kjer se Frankie znajde v nerodni situaciji zaradi Charlieja. Veronica in Florencia se sestaneta na skrivaj. Veronica ji natrosi kup laži o Natalii in jo prikaže kot morilko. Njun sestanek prekine Manuel.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425153000 +0200" stop="20160425163000 +0200">
+         <title lang="sr">Italijanska nevesta, 2014</title>
+         <desc lang="sr">Muchacha Italiana viene a casarse I. -  prva sezona /  epizoda 70 -  MEXICO -  Igrajo: Livia Brito, Jose Ron, Isela Vega, Enrique Rocha, Nailea Norvind, Fernando Allende, Mike Biagio, Eleazar Gomez.&lt; Aitana pove Fiorelli, da sta s Pedrom zaročena, kar jo popolnoma šokira. Pedro je obupan in Fiorelli prizna, da njegovo srce pripada samo njej. Predlaga ji, da bi skupaj zbežala, vendar ona ne namerava zapustiti svoje sestre Gianne. Osvaldo uslužbencem v podjetju predstavi Aitano kot novo sodelavko. Dante posvari Federico, da jo bo Aitana zagotovo imela na očeh, zato mora paziti, kaj dela.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425163000 +0200" stop="20160425165500 +0200">
+         <title lang="sr">24UR popoldne, 2016</title>
+         <desc lang="sr">24UR popoldne -  24UR POPOLDNE je na programu vsak delovnik in poteka v živo iz osrednjega studia POP TV. Oddaja na kratek, zgoščen in dinamičen način ponuja do takrat najaktualnejše novice dneva z različnih področij življenja: politike, gospodarstva, kronike, športa in vremensko napoved.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425165500 +0200" stop="20160425175500 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 11 -  AUSTRIA,GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; V dvigalu stavbe odkrijejo truplo direktorice agencije, nekaj ur kasneje pa je na podoben način umorjen uslužbenec v kinu. Brandtner predvideva, da za umori stoji ista oseba. Ko se pojavijo nove žrtve, dokazi pokažejo, da je v zločine vpletenih več oseb. Preiskava Brandtnerja pripelje do medicinskega centra, kjer testirajo zdravila na mladih študentih.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425175500 +0200" stop="20160425185500 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 52 -  SloVENIA.&lt; Zmagovalca prejšnje oddaje pripravita lososa s koprovo omako, blitvo in krompirjem. Izzivalki Marina in Marinela prihajata iz Ormoža in se suvereno lotita popečene vratovine z jurčki in špinačnimi rezanci, čeprav mama vskoči kar dvakrat, pri nabiranju dodatnih sestavin in pri kontroli okusov.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425185500 +0200" stop="20160425185800 +0200">
+         <title lang="sr">24UR vreme, 2016</title>
+         <desc lang="sr">24UR vreme -  24UR VREME je z vami vsak dan pred osrednjo dnevnoinformativno oddajo. Napoved je atraktivno podkrepljena z grafiko, ki ponuja nazoren pregled vremena po državi in z zanimivimi dogodki, povezanimi z vremenom. Prisluhnete lahko tudi nasvetom in vremenskim opozorilom, ki so postali stalnica pri očitnih klimatskih spremembah.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425185800 +0200" stop="20160425200000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425200000 +0200" stop="20160425210000 +0200">
+         <title lang="sr">Usodno vino, 2015</title>
+         <desc lang="sr">Usodno vino II. -  druga sezona /  epizoda 44 -  SloVENIA -  Igrajo: Inja Zalta, Klemen Janežič, Tjaša Železnik, Aljaž Jovanovič, Nina Ivanič, Jernej Kuntner.&lt; Ivan in Stane skupaj zakopljeta Marijino skrivnost. Martin ne verjame, da bi ga Nina zapustila. Sluti pa, da je Nina v nevarnosti. Nini se posreči pobegniti od Andréja, le da je André hitrejši in jo ujame. Bo tokrat Martin prišel pravočasno?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425210000 +0200" stop="20160425230500 +0200">
+         <title lang="sr">Arbitraža, 2012</title>
+         <desc lang="sr">Arbitrage -  USA -  Režija: Nicholas Jerecki -  Igrajo: Richard Gere, Susan Sarandon, Tim Roth, Laetitia Casta, Brit Marling.&lt; Robert Miller je uspešni finančni poslovnež, ki mu v življenju nič ne manjka. A njegovo na videz popolno življenje se mu postavi na glavo, ko povzroči prometno nesrečo, v kateri umre njegova ljubica. Po pobegu s kraja nesreče skuša zakriti svoje sledi, toda detektiv Bryer ne bo odnehal, dokler ne bo prevzetnemu bogatašu dokazal krivde. Preiskovanje njegovega življenja pa ogrozi vse, kar je dosegel, ko se poleg njegovih osebnih skrivnosti razkrijejo tudi nelegalni posli s financami.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425230500 +0200" stop="20160425234000 +0200">
+         <title lang="sr">24UR zvečer, 2016</title>
+         <desc lang="sr">24UR zvečer -  Informativna oddaja 24UR ZVEČER je na programu vsak delovnik od ponedeljka do petka. Oddaja vsebinsko nadgrajuje osrednjih 24UR. V njej so na atraktiven način podane najpomembnejše novice in zgodbe dneva, obogatene s pregledom zadnjih, najnovejših večernih domačih in tujih dogodkov. 24UR ZVEČER ponuja vsebinsko, vizualno bogat in sodoben vpogled v dogajanje dneva.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160425234000 +0200" stop="20160425234000 +0200">
+         <title lang="sr">Nepremagljivi dvojec, 2013</title>
+         <desc lang="sr">Suits III. -  tretja sezona /  epizoda 6 -  USA -  Igrajo: Patrick J. Adams, Gabriel Macht, Gina Torres, Meghan Markle.&lt; Pred desetimi leti. Harvey raje odstopi s položaja tožilca, kot pa da bi bil soudeležen pri Cameronovi etično sporni odločitvi. Skupaj z Donno začneta delati za Jessico, ki je s Hardmanom prevzela odvetniško pisarno, obenem pa se z Donno zapleteta v razmerje. V istem času dijak Mike izve, da so ga sprejeli na Harvard, toda zaplete se, ko mora Mike odplačati dolg sostanovalcu Trevorju. Sedanjost.  Harvey pove Jessici, da ne želi več prevzeti njenega položaja, Donni pa prizna, da ga moti njeno ljubimkanje s Stephenom.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426060000 +0200" stop="20160426070000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426070000 +0200" stop="20160426073000 +0200">
+         <title lang="sr">Čebelica Maja, 2012</title>
+         <desc lang="sr">Maya the Bee I. -  prva sezona /  epizoda 35 -  GERMANY.&lt; V panju prirejajo zabavo, na kateri bi kraljica rada videla nastop slavnega čmrlja pevca, s katerim je pred davnimi časi igral tudi Flip. Maja se ga odloči najti in to hitro tudi naredi, toda zelo je razočarana, ko čmrlj pove, da je njegova pevska kariera končana. Se bo pripravljen kraljici na ljubo povzpeti na oder?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426073000 +0200" stop="20160426080000 +0200">
+         <title lang="sr">Smrkci, 1958</title>
+         <desc lang="sr">Smurfs I. -  prva sezona /  epizoda 68 -  BELGIUM, USA.&lt; Smrkcem očitno zmanjkuje časa za igranje s Smrkolini, zato obiščejo očeta Časa in se znajdejo na reki Časa, velikem toku, v katerem je ves čas na svetu. Kar naenkrat pa se zgodi nezgoda.&lt;</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426080000 +0200" stop="20160426081000 +0200">
+         <title lang="sr">Florjan, gasilski avto, 2007</title>
+         <desc lang="sr">Finley the Fire Engine I. -  prva sezona /  epizoda 39 -  USA.&lt; Florjan je prijazen gasilski avto, ki vedno rad priskoči na pomoč. S prijatelji Smetkom, Sladoledko, Jerico, buldožerjem Buldijem in drugimi sestavlja veselo druščino, ki se vsak dan nauči nekaj novega. Florjan je zelo radoveden, poln energije in vedno pripravljen na zabavo ter nove stvari. Ko odraste, hoče biti najboljši in najhitrejši gasilski avto na svetu.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426081000 +0200" stop="20160426082000 +0200">
+         <title lang="sr">Lena Lučka, 2006</title>
+         <desc lang="sr">Lazy Lucy I. -  prva sezona /  epizoda 33 -  GERMANY.&lt; Lučka je povsem običajna osemletna deklica, ki mora tako kot vsi otroci staršem pomagati pri domačih opravilih in se obenem še marsikaj naučiti: pospraviti mora svojo sobo, pomagati v kuhinji in na vrtu ter igrati na glasbene inštrumente. Lučkin vsakdan je zato poln izzivov, ki pa se jih deklica loteva na samosvoj in izredno inovativen način. Zakaj bi nas delo utrujalo, če pa lahko poskrbimo, da ga opravimo lenobno in s pomočjo svojih prijateljev? Nič čudnega torej, da je Lučka znana kot lena Lučka!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426082000 +0200" stop="20160426083500 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426083500 +0200" stop="20160426093000 +0200">
+         <title lang="sr">Italijanska nevesta, 2014</title>
+         <desc lang="sr">Muchacha Italiana viene a casarse I. -  prva sezona /  epizoda 70 -  MEXICO -  Igrajo: Livia Brito, Jose Ron, Isela Vega, Enrique Rocha, Nailea Norvind, Fernando Allende, Mike Biagio, Eleazar Gomez.&lt; Aitana pove Fiorelli, da sta s Pedrom zaročena, kar jo popolnoma šokira. Pedro je obupan in Fiorelli prizna, da njegovo srce pripada samo njej. Predlaga ji, da bi skupaj zbežala, vendar ona ne namerava zapustiti svoje sestre Gianne. Osvaldo uslužbencem v podjetju predstavi Aitano kot novo sodelavko. Dante posvari Federico, da jo bo Aitana zagotovo imela na očeh, zato mora paziti, kaj dela.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426093000 +0200" stop="20160426100000 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426100000 +0200" stop="20160426110000 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 11 -  AUSTRIA, GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; V dvigalu stavbe odkrijejo truplo direktorice agencije, nekaj ur kasneje pa je na podoben način umorjen uslužbenec v kinu. Brandtner predvideva, da za umori stoji ista oseba. Ko se pojavijo nove žrtve, dokazi pokažejo, da je v zločine vpletenih več oseb. Preiskava Brandtnerja pripelje do medicinskega centra, kjer testirajo zdravila na mladih študentih.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426110000 +0200" stop="20160426111500 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426111500 +0200" stop="20160426121000 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 25 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Felipe opazi, da se Gabriela nenavadno obnaša in sumi, da mu nekaj prikriva. Ivan povabi Frankie na zmenek, ki ga bosta preživela v družbi Felipeja in Natalie. Odpravijo se na večerjo v hotel, kjer se Frankie znajde v nerodni situaciji zaradi Charlieja. Veronica in Florencia se sestaneta na skrivaj. Veronica ji natrosi kup laži o Natalii in jo prikaže kot morilko. Njun sestanek prekine Manuel.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426121000 +0200" stop="20160426122500 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426122500 +0200" stop="20160426133000 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 52 -  SloVENIA.&lt; Zmagovalca prejšnje oddaje pripravita lososa s koprovo omako, blitvo in krompirjem. Izzivalki Marina in Marinela prihajata iz Ormoža in se suvereno lotita popečene vratovine z jurčki in špinačnimi rezanci, čeprav mama vskoči kar dvakrat, pri nabiranju dodatnih sestavin in pri kontroli okusov.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426133000 +0200" stop="20160426143500 +0200">
+         <title lang="sr">Usodno vino, 2015</title>
+         <desc lang="sr">Usodno vino II. -  druga sezona /  epizoda 44 -  SloVENIA -  Igrajo: Inja Zalta, Klemen Janežič, Tjaša Železnik, Aljaž Jovanovič, Nina Ivanič, Jernej Kuntner.&lt; Ivan in Stane skupaj zakopljeta Marijino skrivnost. Martin ne verjame, da bi ga Nina zapustila. Sluti pa, da je Nina v nevarnosti. Nini se posreči pobegniti od Andréja, le da je André hitrejši in jo ujame. Bo tokrat Martin prišel pravočasno?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426143500 +0200" stop="20160426153500 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 26 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Lorenzo pove Veronici, da morata prepričati Florencio, naj postane njuna zaveznica, saj jo potrebujeta za uresničitev njunega zlobnega načrta. Gabriela se udeleži zabave, ki jo prekine policija. S Federicom želita pobegniti pred možmi v modrem, ko doživita hudo prometno nesrečo. Federico Gabrielo prisili, da prevzame krivdo za nesrečo. Felipe, Natalia in Lucas odhitijo v bolnišnico, da bi ji stali ob strani.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426153500 +0200" stop="20160426163000 +0200">
+         <title lang="sr">Italijanska nevesta, 2014</title>
+         <desc lang="sr">Muchacha Italiana viene a casarse I. -  prva sezona /  epizoda 71 -  MEXICO -  Igrajo: Livia Brito, Jose Ron, Isela Vega, Enrique Rocha, Nailea Norvind, Fernando Allende, Mike Biagio, Eleazar Gomez.&lt; Diana Vittoriu pokaže sporočilo na Fiorellinem mobilnem telefonu, ki ji ga je poslal Pedro. Medtem njega skrbi, ker ne dobi njenega odgovora. Federica in Sonia kujeta zaroto proti Aitani, ki jo nameravata spoditi iz podjetja. Osvaldo Sonii pove, naj zaradi nosečnosti preneha z delom, saj jo lahko zamenja Aitana. Njun pogovor se kmalu sprevrže v prepir, ko se Sonia nenadoma zgrudi v bolečinah.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426163000 +0200" stop="20160426165500 +0200">
+         <title lang="sr">24UR popoldne, 2016</title>
+         <desc lang="sr">24UR popoldne -  24UR POPOLDNE je na programu vsak delovnik in poteka v živo iz osrednjega studia POP TV. Oddaja na kratek, zgoščen in dinamičen način ponuja do takrat najaktualnejše novice dneva z različnih področij življenja: politike, gospodarstva, kronike, športa in vremensko napoved.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426165500 +0200" stop="20160426175500 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 12 -  AUSTRIA, GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; Xaver Stoll je obseden z erotičnimi romani pisateljice Tine Hecht in že dolgo časa načrtuje njeno ugrabitev, saj želi uresničiti svoje fantazije iz njenih knjig. Tina se je pred kratkim preselila v novo stanovanje, zato Stoll umori napačno dekle, ki jo je zamenjal za njo. A nepridipravu se le uspe dokopati do Tine, ki jo ugrabi in zapre v kletko. Jo bodo preiskovalci še pravočasno našli?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426175500 +0200" stop="20160426185500 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 53 -  SloVENIA.&lt; Včerajšnji zmagovalni par se tokrat loti priprave mesnih polpetov iz svinjskega mesa s krompirjevim čipsom. Izzivalki Darinka in Monika prihajata iz Trbovelj. Odločita se za mesne kanelone z limonco in paradižnikom, čeprav je pot od palačink do kanelonov precej ovinkasta, saj mora mama naknadno priskrbeti kar nekaj potrebnih sestavin.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426185500 +0200" stop="20160426185800 +0200">
+         <title lang="sr">24UR vreme, 2016</title>
+         <desc lang="sr">24UR vreme -  24UR VREME je z vami vsak dan pred osrednjo dnevnoinformativno oddajo. Napoved je atraktivno podkrepljena z grafiko, ki ponuja nazoren pregled vremena po državi in z zanimivimi dogodki, povezanimi z vremenom. Prisluhnete lahko tudi nasvetom in vremenskim opozorilom, ki so postali stalnica pri očitnih klimatskih spremembah.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426185800 +0200" stop="20160426200000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426200000 +0200" stop="20160426210000 +0200">
+         <title lang="sr">Usodno vino, 2015</title>
+         <desc lang="sr">Usodno vino II. -  druga sezona /  epizoda 45 -  SloVENIA -  Igrajo: Inja Zalta, Klemen Janežič, Tjaša Železnik, Aljaž Jovanovič, Nina Ivanič, Jernej Kuntner.&lt; Ivan in Ines se poročita, čeprav je Ines v visoki nosečnosti. Ivan bi jo najraje videl v postelji vse do poroda, nikamor je ne spusti. A Ines bi rada obiskala Majo, ki je na zdravljenju. Za Ivanovim hrbtom pregovori Simona, da bi jo odpeljal k njej. Dora in Igor se preselita k Violeti in se pripravljata na poroko. Kofijev oče je preživel genocid v Afriki in v Slovenijo pride po sina. Martin in Nina ne bosta zapustila Pomjana, ker je Martin začel delati na pediatriji v sosednjem mestu. V Pomjan se priseli mlad farmacevt Brane. Staneta zadene infarkt, a je na srečo v bližini Martin. Ali mu bo uspelo rešiti očeta?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426210000 +0200" stop="20160426220000 +0200">
+         <title lang="sr">Preverjeno, 2016</title>
+         <desc lang="sr">Preverjeno - 2016 -  sezona 0 -  epizoda 17 -  SloVENIA.&lt; Ogledali si bodo pet krajev, kjer se je letos v prometnih nesrečah ubilo pet motoristov, in ugotavljali, ali so za nesreče krive razmere na cesti ali neznanje in neprevidnost motoristov. Pogledali bodo, kdo so slovenski pravičniki, ki so med drugo svetovno vojno reševali Jude pred koncentracijskimi taborišči in smrtjo, nekakšni slovenski Oskarji Schindlerji. Pa še o tem, kako se po volitvah v New Yorku razpleta predvolilna vročica v Zda.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426220000 +0200" stop="20160426223500 +0200">
+         <title lang="sr">24UR zvečer, 2016</title>
+         <desc lang="sr">24UR zvečer -  Informativna oddaja 24UR ZVEČER je na programu vsak delovnik od ponedeljka do petka. Oddaja vsebinsko nadgrajuje osrednjih 24UR. V njej so na atraktiven način podane najpomembnejše novice in zgodbe dneva, obogatene s pregledom zadnjih, najnovejših večernih domačih in tujih dogodkov. 24UR ZVEČER ponuja vsebinsko, vizualno bogat in sodoben vpogled v dogajanje dneva.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426223500 +0200" stop="20160426233000 +0200">
+         <title lang="sr">Nepremagljivi dvojec, 2013</title>
+         <desc lang="sr">Suits III. -  tretja sezona /  epizoda 7 -  USA -  Igrajo: Patrick J. Adams, Gabriel Macht, Gina Torres, Meghan Markle.&lt; Avino sojenje se znajde v veliki nevarnosti, saj polkovnik Moriga na sodišču priča proti njej. Jessica prevzame vajeti primera in poskuša sodnika prepričati, da je bil Nick tisti, ki je naročil umor protestnikov. Mike obišče Camerona v njegovi pisarni, da bi poizvedel, kakšnega aduta skriva Cameron v rokavu. Stephen se še naprej vmešava v primer, kar ga stane zaroke z Donno. Louis ne želi Nigelu vrniti njegove mačke in mu grozi s tožbo za skrbništvo.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426233000 +0200" stop="20160426002500 +0200">
+         <title lang="sr">Kosti, 2013</title>
+         <desc lang="sr">Bones IX. -  deveta sezona /  epizoda 24 -  USA -  Igrajo: Emily Deschanel, David Boreanaz, Michaela Conlin, TJ Thyne.&lt; Temperance in ostali preiskujejo smrt moškega, ki je Boothu ponujal informacije glede možne vladne spletke, povezane z enim izmed prejšnjih primerov, a je še pred njunim srečanjem umrl. Booth, Temperance in ostali se poglobijo v možno zaroto, ki je morda povzročila njegovo smrt, vse bolj očitno pa je, da je Booth močno vpleten v primer, zaradi česar postane njegova prihodnost pri FBI zelo vprašljiva.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426002500 +0200" stop="20160426013000 +0200">
+         <title lang="sr">Dexter, 2012</title>
+         <desc lang="sr">Dexter VII. -  sedma sezona /  epizoda 5 -  USA -  Igrajo: Michael C. Hall, Jennifer Carpenter, Lauren Velez, David Zayas, James Remar.&lt; Potem ko Deb izve, da je Laguerta forenzični dokaz poslala na preiskavo v drug laboratorij, ji ta pove za kri, ki jo je našla na prizorišču Marshallovega umora. Debra se dobro zaveda, da bo Laguerta na ta način prišla na sled Dexterju, zato se ji odloči pomagati. Dexter medtem na svojem čolnu najde kri. Test pokaže, da pripada Louisu Greenu, Dexter pa hitro ugotovi, da mu je vse skupaj namestil Sirko.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426013000 +0200" stop="20160426020500 +0200">
+         <title lang="sr">24UR zvečer, 2016</title>
+         <desc lang="sr">24UR zvečer -  Informativna oddaja 24UR ZVEČER je na programu vsak delovnik od ponedeljka do petka. Oddaja vsebinsko nadgrajuje osrednjih 24UR. V njej so na atraktiven način podane najpomembnejše novice in zgodbe dneva, obogatene s pregledom zadnjih, najnovejših večernih domačih in tujih dogodkov. 24UR ZVEČER ponuja vsebinsko, vizualno bogat in sodoben vpogled v dogajanje dneva.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160426020500 +0200" stop="20160426020500 +0200">
+         <title lang="sr">Zvoki noči</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427060000 +0200" stop="20160427070000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427070000 +0200" stop="20160427071500 +0200">
+         <title lang="sr">Čebelica Maja, 2012</title>
+         <desc lang="sr">Maya the Bee I. -  prva sezona /  epizoda 37 -  GERMANY.&lt; Maja in Vili tokrat srečata oso, ki je prijazna, razumevajoča in sploh popolnoma drugačna od drugih. Vesper se zaljubi v Beo in Maja se odloči, da mu jo bo pomagala osvojiti. Toda ali bo njena ljubezenska taktika uspešna?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427071500 +0200" stop="20160427073000 +0200">
+         <title lang="sr">Yoohoo in prijatelji, 2007</title>
+         <desc lang="sr">Yoohoo &amp; Friends I. -  prva sezona /  epizoda 1 -  USA.&lt; Nekoč so na rajskem planetu Jutopiji živeli Yoohoo ter njegovi prijatelji in skrbeli za Drevo življenja. A zaradi nesrečnega naključja semena Drevesa življenja odnese neznano kam in nad Jutopijo se zgrnejo temni oblaki. Da bi našli izgubljena semena in rešili Jutopijo, se Yoohoo in prijatelji odpravijo na Zemljo.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427073000 +0200" stop="20160427074500 +0200">
+         <title lang="sr">Čebelica Maja, 2012</title>
+         <desc lang="sr">Maya the Bee I. -  prva sezona /  epizoda 38 -  GERMANY.&lt; Sodnik Vosek meni, da je panj premajhen za toliko čebel, kolikor se jih tare v njem, zato jih namerava nekaj izseliti. Čebele, ki bodo prisiljene oditi, si bodo morale same najti novo domovanje, toda kako in kje? Maja kmalu ugotovi, da bo zato morda izgubila svojega najboljšega prijatelja. Odloči se spremeniti sodnikovo mnenje.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427074500 +0200" stop="20160427080000 +0200">
+         <title lang="sr">Viking Viki, 2013</title>
+         <desc lang="sr">Vic the Viking I. -  prva sezona /  epizoda 49 -  FRANCE, AUSTRALIA.&lt; Viki mora poskrbeti, da bodo vaški otroci preživeli vesele zimske praznike in iz vasice pregnati nočnega vsiljivca, odločenega, da bo otrokom ukradel vsa darila.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427080000 +0200" stop="20160427080500 +0200">
+         <title lang="sr">Mašine pripovedke, 2012</title>
+         <desc lang="sr">Masha&#39;s Tales I. -  prva sezona /  epizoda 15 -  RUSSIA.&lt; Lisičke so zvite zverinice in ko se v nekaj zapičijo, hočejo to tudi imeti. Kot lisička v današnji zgodbi, ki je našla valjar, hotela pa je petelina.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427080500 +0200" stop="20160427083500 +0200">
+         <title lang="sr">Smrkci, 1958</title>
+         <desc lang="sr">Smurfs I. -  prva sezona /  epizoda 70 -  BELGIUM, USA.&lt; Smrčjo vasico varuje močan urok, ki preprečuje, da bi jo kdorkoli odkril. Ampak vsake toliko časa ta urok popusti in smrčja vas je izpostavljena. Ravno zdaj se Gargamel poda na misijo.&lt;</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427083500 +0200" stop="20160427084500 +0200">
+         <title lang="sr">Lena Lučka, 2006</title>
+         <desc lang="sr">Lazy Lucy I. -  prva sezona /  epizoda 37 -  GERMANY.&lt; Lučka je povsem običajna osemletna deklica, ki mora tako kot vsi otroci staršem pomagati pri domačih opravilih in se obenem še marsikaj naučiti: pospraviti mora svojo sobo, pomagati v kuhinji in na vrtu ter igrati na glasbene inštrumente. Lučkin vsakdan je zato poln izzivov, ki pa se jih deklica loteva na samosvoj in izredno inovativen način. Zakaj bi nas delo utrujalo, če pa lahko poskrbimo, da ga opravimo lenobno in s pomočjo svojih prijateljev? Nič čudnega torej, da je Lučka znana kot lena Lučka!</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427084500 +0200" stop="20160427090000 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427090000 +0200" stop="20160427093000 +0200">
+         <title lang="sr">Morske deklice  -  H2O, 2006</title>
+         <desc lang="sr">H2O I. -  prva sezona /  epizoda 1 -  AUSTRALIA -  Igrajo: Cariba Heine, Phoebe Tonkin, Claire Holt, Angus McLaren.&lt; Emma Gilbert, Cleo Sertori in Rikki Chadwick so tri petnajstletnice, ki se znajdejo ujete na skrivnostnem otoku Mako. Ko zaplavajo v podzemnem bazenu, ki vodi do oceana, se znajdejo sredi čudežne mesečine in še slutijo ne, da jim bo kopanje v bazenu za vedno spremenilo življenje. Ko jih namreč rešijo in se dekleta vrnejo domov, spoznajo, da so postale morske deklice s prav posebnimi lastnostmi.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427093000 +0200" stop="20160427100000 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427100000 +0200" stop="20160427110000 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 12 -  AUSTRIA, GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; Xaver Stoll je obseden z erotičnimi romani pisateljice Tine Hecht in že dolgo časa načrtuje njeno ugrabitev, saj želi uresničiti svoje fantazije iz njenih knjig. Tina se je pred kratkim preselila v novo stanovanje, zato Stoll umori napačno dekle, ki jo je zamenjal za njo. A nepridipravu se le uspe dokopati do Tine, ki jo ugrabi in zapre v kletko. Jo bodo preiskovalci še pravočasno našli?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427110000 +0200" stop="20160427111500 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427111500 +0200" stop="20160427121000 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 26 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Lorenzo pove Veronici, da morata prepričati Florencio, naj postane njuna zaveznica, saj jo potrebujeta za uresničitev njunega zlobnega načrta. Gabriela se udeleži zabave, ki jo prekine policija. S Federicom želita pobegniti pred možmi v modrem, ko doživita hudo prometno nesrečo. Federico Gabrielo prisili, da prevzame krivdo za nesrečo. Felipe, Natalia in Lucas odhitijo v bolnišnico, da bi ji stali ob strani.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427121000 +0200" stop="20160427122500 +0200">
+         <title lang="sr">TV prodaja</title>
+         <desc lang="sr"></desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427122500 +0200" stop="20160427133000 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 53 -  SloVENIA.&lt; Včerajšnji zmagovalni par se tokrat loti priprave mesnih polpetov iz svinjskega mesa s krompirjevim čipsom. Izzivalki Darinka in Monika prihajata iz Trbovelj. Odločita se za mesne kanelone z limonco in paradižnikom, čeprav je pot od palačink do kanelonov precej ovinkasta, saj mora mama naknadno priskrbeti kar nekaj potrebnih sestavin.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427133000 +0200" stop="20160427143500 +0200">
+         <title lang="sr">Usodno vino, 2015</title>
+         <desc lang="sr">Usodno vino II. -  druga sezona /  epizoda 45 -  SloVENIA -  Igrajo: Inja Zalta, Klemen Janežič, Tjaša Železnik, Aljaž Jovanovič, Nina Ivanič, Jernej Kuntner.&lt; Ivan in Ines se poročita, čeprav je Ines v visoki nosečnosti. Ivan bi jo najraje videl v postelji vse do poroda, nikamor je ne spusti. A Ines bi rada obiskala Majo, ki je na zdravljenju. Za Ivanovim hrbtom pregovori Simona, da bi jo odpeljal k njej. Dora in Igor se preselita k Violeti in se pripravljata na poroko. Kofijev oče je preživel genocid v Afriki in v Slovenijo pride po sina. Martin in Nina ne bosta zapustila Pomjana, ker je Martin začel delati na pediatriji v sosednjem mestu. V Pomjan se priseli mlad farmacevt Brane. Staneta zadene infarkt, a je na srečo v bližini Martin. Ali mu bo uspelo rešiti očeta?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427143500 +0200" stop="20160427153500 +0200">
+         <title lang="sr">Nedolžna vsiljivka, 2012</title>
+         <desc lang="sr">Quien eres tu I. -  prva sezona /  epizoda 27 -  COLUMBIA -  Igrajo: Laura Carmine, Julian Gil, Isabel Cristina Estrada, Lincoln Palomeque, Marisol del Olmo.&lt; Felipe obvesti svojo družino, da se na otok vrača Lucia z novim partnerjem Camilom. Conrado zasliša Frankie o njeni zvezi z Ivanom. Lucas pove sestri, naj ne ščiti hrbta Federicu, saj ve, da je on kriv za nesrečo. Felipe prosi Lucio, naj zaenkrat Gabrieli ne pove, da bi lahko bila priklenjena na invalidski voziček zaradi nesreče. Ivan prizna Frankie, da je zaljubljen v njo, medtem ko mu ona še vedno ni pripravljena priznati resnice.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427153500 +0200" stop="20160427163000 +0200">
+         <title lang="sr">Italijanska nevesta, 2014</title>
+         <desc lang="sr">Muchacha Italiana viene a casarse I. -  prva sezona /  epizoda 72 -  MEXICO -  Igrajo: Livia Brito, Jose Ron, Isela Vega, Enrique Rocha, Nailea Norvind, Fernando Allende, Mike Biagio, Eleazar Gomez.&lt; Potem ko jo je vprašal, če ga ljubi, Fiorella Vittoriu prizna, da si nikoli ni predstavljala zveze s tako starejšim moškim. On ji obljubi, da bo naredil vse, da jo bo osrečil. Po naključju se v isti restavraciji srečata z Aitano in Pedrom, ki ne more prikriti svojega ljubosumja. Diana Vittoriu predstavi Felicio kot svojo sestro, vendar njega preseneti, da nista identični dvojčici. Diana ga zamoti s poljubom, pri čemur ju zaloti Fiorella.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427163000 +0200" stop="20160427165500 +0200">
+         <title lang="sr">Kdo se boji črnega moža?, 2012</title>
+         <desc lang="sr">Kdo se boji črnega moža? -  SloVENIA -  Režija: Janez Lapajne -  Igrajo: Tilen Lapajne, Waynet T. Carr, Klaus B. Wolf, Michael Kranz.&lt; 1944. Nekje v okupirani Srednji Evropi. Večkulturni trikotnik med pastirčkom in dvema častnikoma z nasprotnih strani v čutni in čustveni alpski zgodbi o dveh melodijah in eni piščalki. Film scenarista in režiserja Janeza Lapajneta je čustveno nabita pripoved o odraščanju sredi vojne vihre, ki je poklon zgodovini slovenskega filma. Deležen je bil izjemnih odzivov in prejel več filmskih nagrad.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427165500 +0200" stop="20160427175500 +0200">
+         <title lang="sr">Komisar Rex, 2000</title>
+         <desc lang="sr">Kommissar Rex VI. -  šesta sezona /  epizoda 13 -  AUSTRIA, GERMANY -  Igrajo: Gedeon Burkhard, Heinz Weixellbraun, Gerhard Zemann, Wolf Bachofner.&lt; Fred je shizofrenik, ki je pred leti umoril svojega kolega in ga zažgal, da bi prikril svoje dejanje. Po zdravljenju v psihiatrični bolnišnici se preseli k svojima staršema. Tekom prepira zopet izgubi oblast nad seboj in umori oba starša. Ko se skuša znebiti trupel, ga opazi mlado dekle, ki jo ugrabi in namerava ubiti, če vse ne bo šlo po njegovih načrtih. Brandtner in Rex se trudita najti dekle, preden bo prepozno.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427175500 +0200" stop="20160427185500 +0200">
+         <title lang="sr">Moja mama kuha bolje!, 2016</title>
+         <desc lang="sr">Moja mama kuha bolje! I. -  prva sezona /  epizoda 54 -  SloVENIA.&lt; Izzivalca Jasmina in David prihajata iz Maribora in prišla sta po zmago! V kuhinjsko areno se podata s hitrim chilijem in tortilijami. A na poti do zmage jima stoji zmagovalni par iz prejšnje oddaje in panga file v orli testu s tatarsko omako ter pire krompir s korenčkom. Le kaj bo bolj prepričalo Juretove brbončice?</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427185500 +0200" stop="20160427185800 +0200">
+         <title lang="sr">24UR vreme, 2016</title>
+         <desc lang="sr">24UR vreme -  24UR VREME je z vami vsak dan pred osrednjo dnevnoinformativno oddajo. Napoved je atraktivno podkrepljena z grafiko, ki ponuja nazoren pregled vremena po državi in z zanimivimi dogodki, povezanimi z vremenom. Prisluhnete lahko tudi nasvetom in vremenskim opozorilom, ki so postali stalnica pri očitnih klimatskih spremembah.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427185800 +0200" stop="20160427200000 +0200">
+         <title lang="sr">24UR, 2016</title>
+         <desc lang="sr">24UR -  24UR je na programu vsak dan ob 19.00. Z dinamičnim pristopom, voditeljskimi pari, novimi idejami in atraktivno podobo, ki omogoča vsebinsko bogato podajo novic, je dnevno najbolj gledana osrednja dnevnoinformativna oddaja v Sloveniji. Poleg rednih rubrik najaktualnejše novice dneva zajemajo tudi vremensko napoved, družabno kroniko in šport.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427200000 +0200" stop="20160427210000 +0200">
+         <title lang="sr">Usodno vino, 2015</title>
+         <desc lang="sr">Usodno vino II. -  druga sezona /  epizoda 46 -  SloVENIA -  Igrajo: Inja Zalta, Klemen Janežič, Tjaša Železnik, Aljaž Jovanovič, Nina Ivanič, Jernej Kuntner.&lt; Otrok hoče na svet, rešilca pa od nikoder, zato mora Simon ukrepati! Izgleda, da bo Ines rodila svojega prvega otroka na poti v bolnišnico. Ko to izve Ivan, Simona obsodi neodgovornosti. André se pred Ivanom obnaša zelo korektno, a si v Pomjanu išče stanovanje. Njegov obisk ne bo tako kratek kot se pretvarja, uresničil bi rad skrit načrt, s katerim bi uničil Dolinarjeve. Poroka Igorja in Dore je pred vrati, a Igorjeva frizura, zahvaljujoč Sanji, ni primerna. Slavko že načrtuje rešitev, a ta načrt ima veliko napako, ki Igorja drago stane.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427210000 +0200" stop="20160427220500 +0200">
+         <title lang="sr">MasterChef Slovenija, 2016</title>
+         <desc lang="sr">MasterChef Slovenija II. -  druga sezona /  epizoda 13 -  SloVENIA.&lt; Tekmovalci tokrat kuhajo izven MasterChef kuhinje. Sliši se topot konjskih kopit, saj kuhajo za prave slovenske kavboje. Na njihovih krožnikih se mora znajti steak, vodji pa sta pravo nasprotje ali kot ju opiše eden izmed tekmovalcev: »Mladi virtuoz proti Anki«. Tiha Anka mora prvič povzdigniti glas, a sama vztraja: »Volk dlako menja, karakterja ne!«</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427220500 +0200" stop="20160427230000 +0200">
+         <title lang="sr">Nepremagljivi dvojec, 2013</title>
+         <desc lang="sr">Suits III. -  tretja sezona /  epizoda 8 -  USA -  Igrajo: Patrick J. Adams, Gabriel Macht, Gina Torres, Meghan Markle.&lt; Jessica in Harvey se soočita z Darbyjem, ki prizna, da je naknadno izvedel, da je Stephen naročil umore protestnikov, a da se je bal karkoli storiti glede tega iz strahu, da bo Stephen škodil Avi. Prepričata ga, da odpusti Stephena, toda kaj, ko njegovo pričanje nazadnje ni dovolj za dokaz Stephenove krivde. Jessica upošteva Darbyjev nasvet in se pobota s Harveyjem, s katerim potem združita moči, da bi pomagala Avi.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427230000 +0200" stop="20160427235500 +0200">
+         <title lang="sr">Prevara, 2008</title>
+         <desc lang="sr">Deception I. -  prva sezona /  epizoda 1 -  USA -  Igrajo: Meagan Good, Laz Alonso, Tate Donovan, Wes Brown, Victor Garber.&lt; Agent FBI-ja Will Moreno preiskuje umor premožne Vivian Bowers, ki je redno polnila strani tabloidov in bila znana po svojih divjih zabavah. Will je sumničav in dvomi, da je Vivian umrla zaradi prevelikega odmerka mamil. Je možno, da je bila umorjena? Na pomoč pokliče svojo bivšo sodelavko z oddelka sanfranciške policije Joanno Locasto, ki je kot hčerka tamkajšnje služkinje odraščala pri Bowersovih, lastnikih vplivnega farmacevtskega podjetja. Njena naloga je vtihotapiti se v družino, ki ji je bila svoje čase zelo blizu, in izvedeti, kdo je umoril njeno najboljšo prijateljico iz otroštva.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427235500 +0200" stop="20160427010000 +0200">
+         <title lang="sr">Dexter, 2012</title>
+         <desc lang="sr">Dexter VII. -  sedma sezona /  epizoda 6 -  USA -  Igrajo: Michael C. Hall, Jennifer Carpenter, Lauren Velez, David Zayas, James Remar.&lt; Dexter se odloči umoriti Hanno McKay, saj je zbral dokaze o njenih preteklih umorih. Toda namesto umora se zgodi poljub in tako se Dexter zaplete v strastno ljubezensko razmerje. Laguerta še naprej sledi svojim občutkom in je Dexterju čedalje bliže. Quinn se pogovori z Nadio in se odloči vrniti denar, ki ga je našel v avtu. Žal mu mafijci ne ponujajo velike izbire: Ali bo uničil dokaze, ki Sirka povezujejo s kolumbijskim streljanjem, ali pa bo Nadia plačala ceno. Batista resno razmišlja o nakupu restavracije.</desc>
+     </programme>
+     <programme channel="TV spored POP TV" start="20160427010000 +0200" stop="20160427010000 +0200">
+         <title lang="sr">Zvoki noči</title>
+         <desc lang="sr"></desc>
+     </programme>
+ </tv>

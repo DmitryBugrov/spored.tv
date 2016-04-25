@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	//	"os"
 	"regexp"
 	"strings"
 	"time"
@@ -18,9 +17,7 @@ var (
 	Client *http.Client
 	Domain string
 	err    error
-	//	channelList  []Channel
-	//	programmList []Program
-	tv TV
+	tv     TV
 )
 
 type TV struct {
@@ -82,7 +79,7 @@ func main() {
 	tv.ChannelList = GetChannelList(page)
 	tv.Generator = "Alternet"
 	tv.Created = firstPage
-	for currentChanell := 0; currentChanell < 1; currentChanell++ { //len(channelList); i++ {
+	for currentChanell := 0; currentChanell < len(tv.ChannelList); currentChanell++ {
 		//get channel page
 		page := SiteParser.GetPage(Client, tv.ChannelList[currentChanell].Url)
 		channel := string(GetStationHeader(page))
@@ -206,7 +203,7 @@ func GetTitle(page []byte) string {
 	var result = ""
 	blockForTitle := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("ProgramDescriptionLink"))
 	title := SiteParser.GetBlocks(blockForTitle, []byte(">"), []byte("<"))
-	//if title don't exist
+	//if title exist
 	if len(title) > 0 {
 		result = string(title[0])
 	} else {
@@ -226,6 +223,7 @@ func GetDescription(page []byte) string {
 	var result = ""
 	blockForDescription := SiteParser.FindTegBlockByParam(page, []byte("id"), []byte("DivProgramDescription_"))
 	description := SiteParser.GetBlocks(blockForDescription, []byte(">"), []byte("</div>"))
+	//if description exist
 	if len(description) > 0 {
 		result = string(ClearHTMLTag(description[0]))
 		//result = string(description[0])
@@ -236,22 +234,28 @@ func GetDescription(page []byte) string {
 func GetStartTime(page []byte) string {
 	var result = ""
 	block := SiteParser.GetBlocks(page, []byte("<span"), []byte("</span>"))
+	//if description exist
 	if len(block) == 1 {
 		re := regexp.MustCompile(".*([0-9][0-9]):([0-9][0-9])")
 		timeArray := re.FindStringSubmatch(string(block[0]))
 		if len(timeArray) == 3 {
 			result = timeArray[1] + timeArray[2]
 		}
+	} else {
+		fmt.Println("error parsing start time:", string(page), "=")
 	}
 	return result
 }
 
 func ClearHTMLTag(text []byte) []byte {
+	//list of tags for deleting
 	tagList := []string{"<i>", "</i>", "br />", "<br>"}
 	for i := 0; i < len(tagList); i++ {
 		next := true
 		for next {
+			//find teg
 			n := SiteParser.Find(text, []byte(tagList[i]), 1)
+			//delete teg from text, if exist
 			if n != -1 {
 				copy(text[n:], text[n+len(tagList[i]):])
 				text = text[:len(text)-len(tagList[i])-1]
