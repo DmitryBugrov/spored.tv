@@ -247,21 +247,40 @@ func GetStartTime(page []byte) string {
 	return result
 }
 
+//func ClearHTMLTag(text []byte) []byte {
+//	//list of tags for deleting
+//	tagList := []string{"<i>", "</i>", "br />", "<br>", "&nbsp;"}
+//	for i := 0; i < len(tagList); i++ {
+//		next := true
+//		for next {
+//			//find teg
+//			n := SiteParser.Find(text, []byte(tagList[i]), 1)
+//			//delete teg from text, if exist
+//			if n != -1 {
+//				if tagList[i] == "&nbsp;" {
+//					text = []byte(string(text[:n]) + " " + string(text[n+len(tagList[i]):]))
+//				} else {
+//					//copy(text[n-1:], text[n+1+len(tagList[i]):])
+//					//text = text[:len(text)-len(tagList[i])-1]
+//					text = []byte(string(text[:n]) + string(text[n+len(tagList[i]):]))
+//				}
+//			} else {
+//				next = false
+//			}
+//		}
+//	}
+//	return text
+//}
+
 func ClearHTMLTag(text []byte) []byte {
 	//list of tags for deleting
-	tagList := []string{"<i>", "</i>", "br />", "<br>"}
+	tagList := []string{"<i>", "</i>", "<br />", "<br>", "&nbsp;", "<a.*a>"}
 	for i := 0; i < len(tagList); i++ {
-		next := true
-		for next {
-			//find teg
-			n := SiteParser.Find(text, []byte(tagList[i]), 1)
-			//delete teg from text, if exist
-			if n != -1 {
-				copy(text[n:], text[n+len(tagList[i]):])
-				text = text[:len(text)-len(tagList[i])-1]
-			} else {
-				next = false
-			}
+		re := regexp.MustCompile(tagList[i])
+		if tagList[i] == "&nbsp;" {
+			text = []byte(re.ReplaceAllLiteralString(string(text), " "))
+		} else {
+			text = []byte(re.ReplaceAllLiteralString(string(text), ""))
 		}
 	}
 	return text
