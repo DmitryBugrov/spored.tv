@@ -82,7 +82,8 @@ func main() {
 	for currentChanell := 0; currentChanell < len(tv.ChannelList); currentChanell++ {
 		//get channel page
 		page := SiteParser.GetPage(Client, tv.ChannelList[currentChanell].Url)
-		channel := string(GetStationHeader(page))
+		//channel := string(GetStationHeader(page))
+		channel := tv.ChannelList[currentChanell].Id
 		//get urls for days
 		daysURL := GetDaysURL(page)
 		for currentDay := 0; currentDay < len(daysURL); currentDay++ {
