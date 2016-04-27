@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"encoding/xml"
 	"flag"
 	"fmt"
@@ -14,10 +15,11 @@ import (
 )
 
 var (
-	Client *http.Client
-	Domain string
-	err    error
-	tv     TV
+	Client    *http.Client
+	Domain    string
+	err       error
+	tv        TV
+	ChannelID map[string]string
 )
 
 type TV struct {
@@ -72,6 +74,17 @@ func main() {
 	jar := SiteParser.NewJar()
 	Client = &http.Client{Jar: jar}
 
+	//get channelId map
+	input, err := ioutil.ReadFile("channel-id.json")
+	if err != nil {
+		fmt.Printf("error read json file: %v\n", err)
+	}
+	err = json.Unmarshal(input, &ChannelID)
+	if err != nil {
+		fmt.Printf("error parsing json file: %v\n", err)
+	}
+	//fmt.Println("Channel ID:", ChannelID)
+
 	//get first page
 	page := SiteParser.GetPage(Client, firstPage)
 
@@ -82,7 +95,6 @@ func main() {
 	for currentChanell := 0; currentChanell < len(tv.ChannelList); currentChanell++ {
 		//get channel page
 		page := SiteParser.GetPage(Client, tv.ChannelList[currentChanell].Url)
-		//channel := string(GetStationHeader(page))
 		channel := tv.ChannelList[currentChanell].Id
 		//get urls for days
 		daysURL := GetDaysURL(page)
@@ -152,7 +164,6 @@ func main() {
 	if err != nil {
 		fmt.Printf("error: %v\n", err)
 	}
-	//	os.Stdout.Write(output)
 
 }
 
@@ -169,7 +180,17 @@ func GetChannelList(page []byte) []Channel {
 	for i := 0; i < len(items); i++ {
 		var new_channel Channel
 		new_channel.DN.DisplayName = string(SiteParser.GetBlocks(items[i], []byte("title=\""), []byte("\""))[0])
-		new_channel.Id = new_channel.DN.DisplayName
+
+		//id from json file if exist
+		fmt.Println("Name:", new_channel.DN.DisplayName, "Value: ", ChannelID[new_channel.DN.DisplayName])
+		if ChannelID != nil {
+			if ChannelID[new_channel.DN.DisplayName] != "" {
+				new_channel.Id = ChannelID[new_channel.DN.DisplayName]
+			} else {
+				new_channel.Id = new_channel.DN.DisplayName
+			}
+		}
+
 		new_channel.Url = SiteParser.GetURL(items[i], Domain)
 		new_channel.DN.Lang = "sl"
 		channelList = append(channelList, new_channel)
