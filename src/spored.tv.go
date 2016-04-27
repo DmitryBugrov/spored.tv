@@ -144,6 +144,9 @@ func main() {
 		fmt.Printf("error: %v\n", err)
 	}
 
+	//add xml header
+	output = []byte(xml.Header + string(output))
+
 	//	write XML to file
 	err = ioutil.WriteFile(*XmlFilePtr, output, 0644)
 	if err != nil {
